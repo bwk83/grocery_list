@@ -4,12 +4,12 @@ print("Welcome to your grocery list!")
 
 while True:
     
-    item = input("Enter an item to add to your list or type 'done' to close and print the list:") 
+    item = input("Enter an item to add to your list or type 'done' to close and print the list:") #collect user input
     
-    if item.lower() == "done":
+    if item.lower() == "done": #close and print list
         break
-    else:
-        grocery_list.append(item)
+    else: #add item to the list
+        grocery_list.append(item) 
         
 print("\nHere is your grocery list:")
 for thing in grocery_list:
