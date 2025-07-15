@@ -1,0 +1,16 @@
+#grocery list
+grocery_list = []
+print("Welcome to your grocery list!")
+
+while True:
+    
+    item = input("Enter an item to add to your list or type 'done' to close and print the list:") 
+    
+    if item.lower() == "done":
+        break
+    else:
+        grocery_list.append(item)
+        
+print("\nHere is your grocery list:")
+for thing in grocery_list:
+    print("-", thing)
